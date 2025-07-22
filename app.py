@@ -2,11 +2,12 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
-
+import os
+apikey=os.getenv('TMBD_API_KEY')
 
 def fetch_poster(movie_id):
     try:
-        url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key=8007af338d1bcfdce87ca8672cee27da&language=en-US'
+        url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key=apikey&language=en-US'
         response = requests.get(url)
         response.raise_for_status()  # Raise HTTPError for bad responses
         data = response.json()
