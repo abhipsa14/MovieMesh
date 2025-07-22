@@ -1,0 +1,16 @@
+Recommender System: It is most widely used system in today's world, every company prefers to use these to improve customer conversion rates and making things available online which improves their public value and efficiency.
+
+Types of Recommender system:
+1. Content based: recommendation is done on the basis of content, tags are utilized in it.
+2. Collaborative filtering: Recommendation done on the basis of collaborating two or more than two people and based similar fashion recommend the content.
+3. Hybrid : combines both approaches
+
+Project flow:
+data -> data preprocessing -> model -> website -> deploying
+
+Vectorization
+-- converting text into vectors
+-- then representing them on 2d plane
+-- if a person watches a movie, the related one get recommended on the basis of nearest vectors
+-- text Vectorization
+-- bag of words--> combining all the words together, putting it in a bag, then counting frequency of the most occuring words.
