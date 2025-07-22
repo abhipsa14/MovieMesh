@@ -47,9 +47,9 @@ It's recommended to use a virtual environment.
 python -m venv venv
 # Activate the virtual environment
 # On Windows:
-# .\venv\Scripts\activate
+.\venv\Scripts\activate
 # On macOS/Linux:
-# source venv/bin/activate
+source venv/bin/activate
 
 # Install the required packages
 pip install -r requirements.txt
@@ -62,46 +62,33 @@ requests
 scikit-learn # Assuming similarity matrix is from here
 
 Get Your TMDB API Key
-
 Go to The Movie Database (TMDb) website.
-
 Sign up for an account or log in.
-
 Navigate to your account settings and then to the API section.
-
 Request a new API key (Developer or Personal use). You will need an "API Key (v3 auth)".
 
 Set Up Environment Variable for API Key
 To keep your API key secure and out of your code, it's best to store it as an environment variable.
-
 Create a file named .env in the root directory of your project (where app.py or your main script is located).
-
 Add the following line to the .env file, replacing YOUR_TMDB_API_KEY with the actual key you obtained from TMDb:
 
 TMBD_API_KEY=YOUR_TMDB_API_KEY
-
 Ensure your Python script loads this environment variable. If you're using python-dotenv, you'd typically add from dotenv import load_dotenv; load_dotenv() at the top of your script. If you're relying solely on os.getenv(), make sure the environment variable is set in your system's environment before running the app.
 
 Prepare Data Files
 This project relies on pre-processed data files:
-
 movie.dict.pkl: A pickled dictionary containing movie data (e.g., movie IDs and titles).
-
 similarity.pkl: A pickled similarity matrix (e.g., cosine similarity) used for recommendations.
 Place these files in the same directory as your main Streamlit application script.
 
 ▶️ Running the Application
 Once you have completed the installation and setup steps, you can run the Streamlit application:
-
 streamlit run your_main_script_name.py # e.g., streamlit run app.py
-
 This command will open the MovieMesh application in your default web browser.
 
 💡 Usage
 The fetch_poster function is a core utility:
-
 from your_module import fetch_poster # Assuming it's in a module
-
 movie_id = 550 # Example movie ID (Fight Club)
 api_key = os.getenv('TMBD_API_KEY')
 
