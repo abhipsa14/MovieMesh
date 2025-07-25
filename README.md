@@ -86,12 +86,12 @@ The fetch_poster function is a core utility:
         print("TMBD_API_KEY not set in environment variables.")
 <hr>
 🤝 Contributing
-1. Contributions are welcome! If you have suggestions for improvements or new features, please feel free to:
-    1. Fork the repository.
-    2. Create a new branch (git checkout -b feature/your-feature-name).
-    3. Make your changes.
-    4. Commit your changes (git commit -m 'Add new feature').
-    5. Push to the branch (git push origin feature/your-feature-name).
+1. Contributions are welcome! If you have suggestions for improvements or new features, please feel free to:<br>
+    1. Fork the repository.<br>
+    2. Create a new branch (git checkout -b feature/your-feature-name).<br>
+    3. Make your changes.<br>
+    4. Commit your changes (git commit -m 'Add new feature').<br>
+    5. Push to the branch (git push origin feature/your-feature-name).<br>
     6. Open a Pull Request.
 
 📄 License
