@@ -94,5 +94,3 @@ The fetch_poster function is a core utility:
     5. Push to the branch (git push origin feature/your-feature-name).<br>
     6. Open a Pull Request.
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
